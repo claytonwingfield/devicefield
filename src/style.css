@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+html{
+  background: black;
+  scroll-behavior: smooth;
+  
+  
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -9999;
+    
+}
+/* .container{
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 400vh;
+} */
+#header{
+  background-color: black;
+    text-align: center; 
+    color: white;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 4rem;
+    font-family: 'Cormorant SC', serif;
+}
+#appbar{
+  
+  text-align: center; 
+  background-color: black;
+  height: 4rem;
+  
+  
+}
+#appbar a{
+ 
+  margin-top: 0rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant SC', serif;
+  font-size: 1.6rem;
+  margin: 1rem;
+  
+}
+
+#appbar li{
+  display: inline;
+}
+.list-item a:hover{
+  cursor: pointer;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+  .section
+{
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 4vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+
+section:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+
+/* SCROLLING ICON */
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+  
+}
+  
+
+.icon-scroll{
+  width: 30px;
+  height: 60px;
+  margin-left: -20px;
+  top: 70%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  
+}
+.web{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+  
+
+@keyframes scroll{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+
+    
+}
+  
+
+
+  /* MEDIA Quries */
+  /* Iphone 13 Pro Max  */
+  @media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    #header{
+      margin-top: 1rem;
+      font-size: 1.5em;
+    }
+    #appbar{
+      text-align: center;
+      margin-top: 1rem;
+    }
+    #appbar a{
+      text-decoration: none;
+      color: white;
+      font-family: 'Cormorant SC', serif;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 0.3rem;
+      
+    }
+    .content {
+      padding: 16px;
+    }
+    
+    .sticky {
+      /* position: fixed; */
+      top: 0;
+      width: 100%;
+    }
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    .section
+    {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        position: relative;
+        font-family: 'Cabin', sans-serif;
+        color: #ffeded;
+        text-transform: uppercase;
+        font-size: 4vmin;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+     /* Scroll */
+    .icon-scroll,
+    .icon-scroll:before{
+      position: absolute;
+      left: 50%;
+    }
+      
+    
+    .icon-scroll{
+      width: 30px;
+      height: 60px;
+      margin-left: -20px;
+      top: 80%;
+      margin-top: -35px;
+      box-shadow: inset 0 0 0 1px #fff;
+      border-radius: 25px;
+    }
+      
+    
+    .icon-scroll:before{
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      margin-left: -4px;
+      top: 8px;
+      border-radius: 4px;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
+    }
+
+    .web{
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+    }
+   
+    
+    
+   }

@@ -1,0 +1,8 @@
+Model Information:
+* title:	Apple Macbook Pro 15 Inch A1707 for Element 3D
+* source:	https://sketchfab.com/3d-models/apple-macbook-pro-15-inch-a1707-for-element-3d-64a80a02f2154e9d9afa682f34c79e89
+* author:	CG Duck (https://sketchfab.com/cg_duck)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest
