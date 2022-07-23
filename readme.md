@@ -1,4 +1,4 @@
-# Three.js Journey
+# Devicefield
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
